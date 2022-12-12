@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-
 main.main {
   background-color: #3a921f;
   padding: 20px 0 20px 0;
@@ -14,7 +13,13 @@ main.main h1 {
 
 .details {
   background: #111818;
-  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(rgba(196, 196, 196, 0.11)));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#22c1c3),
+    to(rgba(196, 196, 196, 0.11))
+  );
   background: linear-gradient(0deg, #22c1c3 0%, rgba(196, 196, 196, 0.11) 100%);
   padding: 15px 7px 15px 7px;
   border-radius: 5px;
@@ -36,14 +41,14 @@ div.center-align {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 90vh;
   position: relative;
 }
@@ -60,8 +65,8 @@ div.center-align div.limit-size div.content-details {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: absolute;
   top: -50px;
   right: 0;
@@ -74,24 +79,23 @@ div.send-image {
   display: flex;
   gap: 0.8rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 div.send-image button.btn {
   border: none;
   background-color: #ffffff;
-  padding: 15px 50px ;
+  padding: 15px 50px;
   border-radius: 90px;
   color: rgb(31, 26, 26);
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
   transition: 0.3s all;
-  
 }
 
-div.send-image button.btn:hover{
+div.send-image button.btn:hover {
   transform: translateY(-20%);
   transition: 0.3s all;
 }
@@ -125,11 +129,11 @@ div.options {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 div.options ul {
@@ -138,19 +142,19 @@ div.options ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
   padding-top: 5rem;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 div.options ul li:nth-child(2n) {
@@ -178,11 +182,11 @@ div.load-image {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -191,7 +195,7 @@ div.load-image img {
   border-radius: 10px;
   max-height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 700px) {
@@ -207,25 +211,41 @@ div.load-image img {
 }
 /*# sourceMappingURL=styles.css.map */
 
-
-@keyframes blinkCursor{
-  from{
-       border-right-color: #fff;
+@keyframes blinkCursor {
+  from {
+    border-right-color: #fff;
   }
-  to{ 
+  to {
     border-right-color: transparent;
   }
 }
 
-.typing-animation{
-    animation: blinkCursor  700ms steps(37) infinite normal , typing 10s steps(37) 2s normal both;
+.typing-animation {
+  animation: blinkCursor 700ms steps(37) infinite normal,
+    typing 10s steps(37) 2s normal both;
 }
 
 @keyframes typing {
-  from{
+  from {
     width: 0px;
   }
-  to{
+  to {
     width: 950px;
+  }
+}
+
+.loadinger {
+  animation: is-rotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 6px solid black;
+  border-top-color: brown;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
   }
 }
