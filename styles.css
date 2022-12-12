@@ -249,3 +249,37 @@ div.load-image img {
     transform: rotate(1turn);
   }
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 25px !important;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 430px;
+    }
+  }
+
+  .btn {
+    padding: 5px 10px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 25px !important;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 460px;
+    }
+  }
+}
